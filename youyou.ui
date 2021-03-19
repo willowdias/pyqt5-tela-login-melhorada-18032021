@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1262</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:white;
+background-color: rgb(0, 0, 0);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1201</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page1">
+     <widget class="QLabel" name="TExt_Link">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>80</y>
+        <width>421</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>  DIGITE O LINK ABAIXO</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="icone">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>271</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>icon/you.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="caixa_link_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>270</y>
+        <width>601</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:black;
+border-style:outset;
+border-radius:15px;
+border-width:3px;
+background-color:rgb(234, 249, 249)</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::VisualMoveStyle</enum>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_image">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>230</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+font-family: Trebuchet MS;
+font-size:14px;
+color:white;
+</string>
+      </property>
+      <property name="text">
+       <string>Image</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_musica">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>230</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+font-family: Trebuchet MS;
+font-size:14px;
+color:white;
+</string>
+      </property>
+      <property name="text">
+       <string>Musica</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_video_2">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>230</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Trebuchet MS</family>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+font-family: Trebuchet MS;
+font-size:14px;
+color:white;
+</string>
+      </property>
+      <property name="text">
+       <string>Video</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="baixa_link">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>410</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Baixar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tela_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>340</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>17</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+border-style:outset;
+border-radius:5px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_welcome">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>260</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Trebuchet MS;
+font-size: 15px;
+font-weight: bold;
+color: white;
+border:none;
+text-decoration:underline;
+color:white;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Bem vindo Usuario.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>230</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+border-style:outset;
+border-radius:12px;
+border-width:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>230</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+border-style:outset;
+border-radius:12px;
+border-width:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>230</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);
+border-style:outset;
+border-radius:12px;
+border-width:0px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="limpar_pagina1">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>410</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Limpar</string>
+      </property>
+     </widget>
+     <zorder>label_4</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_3</zorder>
+     <zorder>TExt_Link</zorder>
+     <zorder>icone</zorder>
+     <zorder>caixa_link_2</zorder>
+     <zorder>radioButton_image</zorder>
+     <zorder>radioButton_musica</zorder>
+     <zorder>radioButton_video_2</zorder>
+     <zorder>baixa_link</zorder>
+     <zorder>tela_2</zorder>
+     <zorder>label_welcome</zorder>
+     <zorder>limpar_pagina1</zorder>
+    </widget>
+    <widget class="QWidget" name="page2">
+     <widget class="QPushButton" name="ver_link_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>630</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>open</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_PAgina2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1071</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.077, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));
+border-radius:12px;
+border-width:0px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1071</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="Open_pagina2">
+          <property name="styleSheet">
+           <string notr="true">border-style:outset;
+border-radius:12px;
+border-width:0px;
+background-color: rgb(255, 255, 255);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="inputAbrirArquivo_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>630</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:1px;
+background-color: rgb(255, 255, 255);
+color:black;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>590</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:12px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>test</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>test</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_pagina2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>670</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:1px;
+background-color: rgb(255, 255, 255);
+color:black;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>670</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>limpar</string>
+      </property>
+     </widget>
+     <zorder>scrollArea_PAgina2</zorder>
+     <zorder>inputAbrirArquivo_2</zorder>
+     <zorder>comboBox</zorder>
+     <zorder>label_pagina2</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>ver_link_2</zorder>
+    </widget>
+    <widget class="QWidget" name="pagina3">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>1041</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: qradialgradient(spread:repeat, cx:0.5, cy:0.5, radius:0.077, fx:0.5, fy:0.5, stop:0 rgba(0, 169, 255, 147), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));
+border-radius:12px;
+border-width:0px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1041</width>
+         <height>491</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelImg">
+          <property name="styleSheet">
+           <string notr="true">border-style:outset;
+border-radius:12px;
+border-width:0px;
+background-color: rgb(255, 255, 255);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="inputAbrirArquivo">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>530</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:1px;
+background-color: rgb(255, 255, 255);
+color:black;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Caminho da foto</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnEscolherArquivo">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>530</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Escolher Arquivo</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>590</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string>  Largura</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputAltura">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>600</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color:black;
+border-style:outset;
+border-radius:8px;
+border-width:0px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>Coloque Altura</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>590</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>    Altura</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="inputLargura">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>600</y>
+        <width>101</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color:black;
+border-style:outset;
+border-radius:8px;
+border-width:0px;
+color:black;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Coloque Largura</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRedimensionar">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>660</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Redimensionar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSalvar">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>660</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Salvar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="limpa_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>660</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Impact</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+      </property>
+      <property name="text">
+       <string>Limpar</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pagin4_cadastro"/>
+   </widget>
+   <widget class="QLabel" name="fundo_imagen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-40</y>
+      <width>1301</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icon/fundo tela.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="login_logado">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>730</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:outset;
+border-radius:5px;
+border-width:0px;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,0,0), stop:1 rgba(1, 181, 180));
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
+   <zorder>fundo_imagen</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>login_logado</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPAGINA1"/>
+   <addaction name="actionPAGINA2"/>
+   <addaction name="actionPAGINA3"/>
+   <addaction name="actionPAGINA4"/>
+   <addaction name="actionFECHAR"/>
+  </widget>
+  <action name="actionpagina">
+   <property name="text">
+    <string>pagina</string>
+   </property>
+  </action>
+  <action name="actionpagina1">
+   <property name="text">
+    <string>pagina1</string>
+   </property>
+  </action>
+  <action name="actionpagina2">
+   <property name="text">
+    <string>pagina2</string>
+   </property>
+  </action>
+  <action name="actionPAGINA1">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>INICIAL</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;INICIAL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionPAGINA2">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>SEGUNDATELA</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;SEGUNDA TELA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionPAGINA3">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>TERCEIRATELA</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;TERCEIRATELA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actionFECHAR">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/cil-x-circle.png</normaloff>icon/cil-x-circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>FECHAR</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;SAIR SISTEMA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionpagina4">
+   <property name="text">
+    <string>pagina4</string>
+   </property>
+  </action>
+  <action name="actionPAGINA4">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/open.png</normaloff>icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>PAGINA4</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;CADASTRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>limpa_3</sender>
+   <signal>clicked()</signal>
+   <receiver>inputAbrirArquivo</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>670</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>478</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>limpar_pagina1</sender>
+   <signal>clicked()</signal>
+   <receiver>caixa_link_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>862</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>840</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>limpar_pagina1</sender>
+   <signal>clicked()</signal>
+   <receiver>tela_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>830</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>665</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>inputAbrirArquivo_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>703</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>660</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Open_pagina2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>456</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>limpa_3</sender>
+   <signal>clicked()</signal>
+   <receiver>labelImg</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>670</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>805</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>limpa_3</sender>
+   <signal>clicked()</signal>
+   <receiver>inputAltura</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>670</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>700</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>limpa_3</sender>
+   <signal>clicked()</signal>
+   <receiver>inputLargura</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>670</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>630</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
